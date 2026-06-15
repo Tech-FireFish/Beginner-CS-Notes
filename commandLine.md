@@ -250,3 +250,68 @@
 //Ex: ...LIKE "possible_phrase_" searches data that starts with "possible_phrase" follow by ONLY one character.
 //Ex: ...LIKE "_possible_phrase_" searches data that starts with ONLY one character, "possible_phrase" in the middle, follows by ONLY one character.
 
+/////////////////////////
+//FILTER OPERATOR USAGE//
+/////////////////////////
+
+>>SELECT "column_name" FROM "table_name" WHERE "column_name" "operator_sign" "compare_value";
+
+//This searches for vaule of "column_name" that is "operator_sign" in comparsion to "compare_value"
+//Notice: "<>" indicates not equal to sign.
+
+>>SELECT "column_name" FROM "table_name" WHERE "column_name" BETWEEN "start_value" AND "end_value";
+
+//Searches for range of values that are between the "start_value" and "end_value".
+
+>>SELECT "column_name" FROM "table_name" WHERE "column_name" = "1specific_value" OR "2specific_value";
+
+//Searches and returns column data where "column_name" has either "1specific_value" or "2specific_value";
+//WHERE NOT "column_name" = "specific_value"; returns data column that are not "specific_value".
+//Ex: >>SELECT "column_name" FROM "table_name" WHERE "job_position" NOT = 'finance'
+//This searches and returns job_position columns that are not finance.
+
+//////////////////
+//SQL JOIN USAGE//
+//////////////////
+
+>>SELECT "column_name" 
+>FROM "table1_name" INNER JOIN "table2_name" 
+>ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
+
+//You MIGHT have all those lines in a single line when entering.
+//You must specify the two tables to join by including the first or left table after FROM and the second or right table after INNER JOIN.
+
+>>SELECT "column_name" 
+>FROM "table1_name" LEFT JOIN "table2_name" 
+>ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
+
+//LEFT JOIN returns all the records of the first table, but only returns rows of the second table that match on a specified column. 
+//You MIGHT think "=" as "and".
+
+>>SELECT "column_name" 
+>FROM "table1_name" Right JOIN "table2_name" 
+>ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
+
+//RIGHT JOIN returns all of the records of the second table, but only returns rows from the first table that match on a specified column. 
+//if you're checking for is a column value is null, use where 'column_name' is null;
+
+>>SELECT "column_name" 
+>FROM "table1_name" Right JOIN "table2_name" 
+>ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
+
+//FULL OUTER JOIN query include all records from both tables. Similar to INNER JOIN, the order of tables does not change the results of the query. 
+
+////////
+//MORE//
+////////
+>>SELECT AVG("numerical_data")
+
+//Returns a single number that represents the average of the numerical data in a column;
+
+>>SELECT COUNT("numerical_data")
+
+//Returns a single number that represents the number of records returned from a query;
+
+>>SELECT SUM("numerical_data")
+Returns a single number that represents the sum of the numerical data in a column;
+
