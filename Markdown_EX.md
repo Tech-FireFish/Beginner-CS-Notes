@@ -8,6 +8,7 @@
 [Headings](#headings)\
 [Blockquotes](#blockquotes)\
 [Lists](#lists)\
+[Links](#links)\
 [Images](#images)\
 [Code](#code)\
 [Nested Lists](#nested-lists)
