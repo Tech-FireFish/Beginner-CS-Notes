@@ -1,6 +1,18 @@
 # CREDITS - https://commonmark.org/ 
 # TUTORIAL LINK: https://commonmark.org/help/tutorial/
 
+# Reference:
+
+[Emphasis](#emphasis-and-emphasis)\
+[Paragraph](#paragraphs)\
+[Headings](#headings)\
+[Blockquotes](#blockquotes)\
+[Lists](#lists)\
+[Images](#images)\
+[Code](#code)\
+[Nested Lists](#nested-lists)
+
+
 <!-- EMPHASIS -->
 
 # *EMPHASIS* and **EMPHASIS**
@@ -97,7 +109,7 @@ _OUTPUT:_
 ## THE END.
 #
 <!-- HEADINGS -->
-# HAEDINGS
+# HEADINGS
 
 EXPLAINS:
 ```
