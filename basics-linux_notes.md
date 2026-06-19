@@ -318,6 +318,7 @@ __OUTPUT:__
 
 **_Decrytion_**
 
+
 __INPUT:__
 `echo 'Ifmmp Xpsme' | tr  "b-zaB-ZA" "a-zA-Z"`
 -  Print(`echo`) "Ifmmp Xpsme" by translating(`tr`) it from the order of (`b-zaB-ZA`) to (`a-zA-Z`).
@@ -326,5 +327,49 @@ __INPUT:__
 __OUTPUT:__
 `Hello World`
 - Every letter in `Ifmmp Xpsme` moves 1 place backward outputs `Hello World`.
-- Returns a single number that represents the sum of the numerical data in a column;
+
+
+## Openssl Cipher
+
+### aes-256-cbc Cipher: 
+```
+echo 'phrase_to_encrypt' | openssl aes-256-cbc -a -k 'secret_phrase'
+```
+- `-a` option translates binary data into plaintext by applying base64 encoding on encrypted binary data.
+- `-d` option is used to decrypt.
+- `-A` option puts all output in a line.
+- `-pbkdf2` iterates and repeats the password-derivation calculation **10,000** times before producing the AES key.
+- `iter 'iteration_times'` repeats the calculation 'iteration_times' times.
+- `-k 'secret_phrase'` sets a symmetric secret for both encryption and decryption.
+- `in 'input_file'` must used together with `out 'file_name'`; Sets input text file.
+- `out 'file_name'` sets file to store the output text.
+
+### Examples
+**_aes-256-cbc Encryption_**
+
+__INPUT:__
+```
+echo 'Hello World' | openssl aes-256-cbc -a -k 'abc123'
+```
+- encrypt `Hello World` using aes-256-cbc with secret `abc123`;
+
+__OUTPUT:__
+`U2FsdGVkX1+BvPUluKzWUKVvLPJC5f+Ub4L2Gz9i2eA=`
+- The output will be **different each time as a random salt value was generated** each time.
+
+
+<!-- **_aes-256-cbc Decryption_** -->
+
+\
+**_aes-256-cbc Decryption_**
+
+__INPUT:__
+```
+echo 'U2FsdGVkX1+BvPUluKzWUKVvLPJC5f+Ub4L2Gz9i2eA=' | openssl aes-256-cbc -a -d -k 'abc123'
+```
+- `-d` option is used to decrypt.
+- *All other options MUST be the same during encryption and decryption*
+
+__OUTPUT:__
+`Hello World`
 
