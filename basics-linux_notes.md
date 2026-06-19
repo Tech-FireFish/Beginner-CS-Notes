@@ -373,3 +373,16 @@ echo 'U2FsdGVkX1+BvPUluKzWUKVvLPJC5f+Ub4L2Gz9i2eA=' | openssl aes-256-cbc -a -d 
 __OUTPUT:__
 `Hello World`
 
+
+## HASH CIPHER
+
+
+```
+sha256sum 'file_name/content'
+```
+- generate an unique Hash-256 key for `file_name`.
+
+`cmp`
+- compare the two files byte by byte. If a difference is found, the command reports the byte and line number where the first difference is found.
+
+
