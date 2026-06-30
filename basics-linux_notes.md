@@ -7,6 +7,7 @@
 
 - [Encryption Specials](#encryption-specials)
     - [Caesar Cipher](#caesar-cipher)
+- [Network Protocol Analyzer](#network-protocol-analyzer)
 
 <!-- List pf Commands -->
 
@@ -386,3 +387,21 @@ sha256sum 'file_name/content'
 - compare the two files byte by byte. If a difference is found, the command reports the byte and line number where the first difference is found.
 
 
+## Network Protocol Analyzer
+[GO BACK](#intro) \
+`sudo tcpdump [-i interface] [option(s)] [expression(s)]`
+-  `option(s)` are optional and provide you with the ability to alter the execution of the command.
+- `-D` outputs a list of interfaces as reference.
+- `-i` specifies interface(s) to capture
+- `-w [filename]` specifies a specific file to save.
+- `-r [filename]` specifies a specific file to open.
+- `-v` or `-vv` or `-vvv` specifies the verbosity of the information.
+- `-c [number of packet]` specifies the number of packets to capture.
+- `-n` disables hostname resolutions for IP Addresses.
+- `-nn` disables resolution for both hostname and port.
+- `&` tells the terminal to run the command in the background.
+- `expression(s)` are a way to further filter network traffic packets so that you can isolate network traffic. 
+- `and`, `or`, `not` specifies boolean operators.
+
+`curl [url]`
+- `curl` sends requests to a specific IP Address.
