@@ -23,14 +23,22 @@ Download Link: <https://godotengine.org/>
 5. Select `version Control Metadata`.
 6. `Create&Edit` to finish setup.
 
+
 ## BASICS FEATURES
+- Left Panel : The current working scene and node(s).
+- Right Panel : The properties of the selected object/node(s).
+- Middle Panel : Scene/Script showcase.
 - Zoom in : Top Left Plus Sign on the Scene Screen OR `Mouse Scrolling Forward`.
 - Zoom out : Top Left Minus Sign on the Scene Screen OR `Mouse Scrolling Backward`.
+- Grid Map : Top of the Scene Screen `Use Grid Snap` OR `Shift + G`.
+- Duplicate Objects : Select the object, then use `Ctrl + D` OR `right click` to duplicate.
 
 ## SCENE
 A Gameplay Scene Might Have:
 - [2D Scene](#2d-scene)
     - Button Node
+    - Script
+    - Label
 
 ### 2D Scene
 - Left Panel -> under Scene tab -> select `2D Scene` node.
@@ -38,18 +46,35 @@ A Gameplay Scene Might Have:
 - Do `Ctrl + S` OR `right click` the current tab on the Top Panel **to save** the scene.
 > Use the top right `Run Project` button OR `F5` to run the scene. 
 
+
 ### 2D Scene/Button Node
+Creation Method(s):
+- Add child node `Ctrl + A` -> Search bar input `Button` -> Select and Create Button.
 
+\
+Properties Usage(s):
+- Add text : Select a Button -> on Right Panel, input text under `Text` Title.
+- Add a tooltip : Select a Button -> Right Panel, under `Tooltip` subtree -> Input text.
+- Add a signal : Select a Button -> Right Panel, under `Signals` tab -> Select a signal.
+> You must have a script to add signals.
+
+
+### Script
 Creation Method:
-- Add child node -> search bar input `Button` -> select Button.
+- Select a scene/node -> Top Right of the Left Panel -> click `Attach Node Script`.
+
+Usage(s):
+> You might only use those function composition(s) within a signal.
+- Quit the application : `get_tree().quit()`.
+- Toggle the Scene(s) : `get_tree().change_scene_to_file("[a_specific_scene_path]")`.
 
 
+### 2D Scene/Label
+Creation Method:
+- Select a scene -> Add a new node `Ctrl + A` -> Search `label` -> Create it.
 
-
-
-
-
-
+Usage(s):
+- Add text : Select a label -> on Right Panel, at `Inspector` Tab, input text under `Text` Title.
 
 
 
