@@ -1,14 +1,16 @@
-# Godot Engine Note Godot v4.6.3 FOR 2D GAME
+# Godot Engine Note | Godot v4.6.3 | 2D GAME
 # The current version is after 51 mins of the 1h 41mins vidoe 5330
 ## REFERENCE
 - [GET_START](#get-start)
+- [BASICS FEATURES](#basics-features)
+- [SCENE](#scene)
 - [CREDITS](#credits)
 
 
 ## Intro
 >*Top* of the editor screen is the **scene tab**. You might **add a new scene to start** every new a player sprite or background for the game. You do need to **put everything together** in a scene for the game **to work** as expected.(Put everything under the Main scene on the Left panel)
 
->*Left Panel* gives you details about of the current scene tab. The plus sign creates new Node and Child Node for your scene, essentially, these Nodes and Child Nodes would build up your game.
+>*Left Panel* gives you **details about of the current scene tab**. The plus sign **creates new Node** and Child Node for your scene, essentially, these Nodes and Child Nodes would build up your game.
 
 ## GET START
 
@@ -21,7 +23,38 @@ Download Link: <https://godotengine.org/>
 5. Select `version Control Metadata`.
 6. `Create&Edit` to finish setup.
 
-## Basic Features
+## BASICS FEATURES
+- Zoom in : Top Left Plus Sign on the Scene Screen OR `Mouse Scrolling Forward`.
+- Zoom out : Top Left Minus Sign on the Scene Screen OR `Mouse Scrolling Backward`.
+
+## SCENE
+A Gameplay Scene Might Have:
+- [2D Scene](#2d-scene)
+    - Button Node
+
+### 2D Scene
+- Left Panel -> under Scene tab -> select `2D Scene` node.
+> You might double-click OR right click on the created node to rename it.
+- Do `Ctrl + S` OR `right click` the current tab on the Top Panel **to save** the scene.
+> Use the top right `Run Project` button OR `F5` to run the scene. 
+
+### 2D Scene/Button Node
+
+Creation Method:
+- Add child node -> search bar input `Button` -> select Button.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
