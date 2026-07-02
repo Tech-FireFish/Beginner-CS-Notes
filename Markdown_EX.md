@@ -285,7 +285,9 @@ You can do anything at <https://github.com/>
 _OUTPUT:_
 >You can do anything at <https://github.com/>
 
-## USAGE 2 `["name"]("url")`
+## USAGE 2 `["name"]("url/header")`
+>If the ["header"] contains a '/', ignore it and join the words together. \
+> Examples: `[IDS/IPS Suricata](#idsips-suricata)`.
 
 _INPUT:_
 ```
