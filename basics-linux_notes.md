@@ -8,6 +8,7 @@
 - [Encryption Specials](#encryption-specials)
     - [Caesar Cipher](#caesar-cipher)
 - [Network Protocol Analyzer](#network-protocol-analyzer)
+- [IDS/IPS Suricata](#idsips-suricata)
 
 <!-- List pf Commands -->
 
@@ -331,6 +332,7 @@ __OUTPUT:__
 
 
 ## Openssl Cipher
+[GO BACK](#intro)
 
 ### aes-256-cbc Cipher: 
 ```
@@ -388,7 +390,8 @@ sha256sum 'file_name/content'
 
 
 ## Network Protocol Analyzer
-[GO BACK](#intro) \
+[GO BACK](#intro)
+
 `sudo tcpdump [-i interface] [option(s)] [expression(s)]`
 -  `option(s)` are optional and provide you with the ability to alter the execution of the command.
 - `-D` outputs a list of interfaces as reference.
@@ -405,3 +408,49 @@ sha256sum 'file_name/content'
 
 `curl [url]`
 - `curl` sends requests to a specific IP Address.
+
+
+## IDS/IPS Suricata
+[GO BACK](#intro)
+
+A Rule Structure of an IDS/IPS has:
+
+Action
+- alert
+- drop(IPS only!)
+- pass
+- reject
+
+
+Header 
+- `[protocol] [traffic_source][source_port] -> [traffic_destination][destination_port]`
+
+
+Rule_Options
+- `msg: [alert_text]` : specifies text message to print when alert(s) happen.
+- `flow: [state], [direction]` specifies network packets with specific state AND direction to filter.
+- `content: [http_method]` : specifies a http method to look for.
+- `sid: [unique_numerical_value]` : specifies a numerical value for the signature rule.
+- `rev: [numerical_value]` : indicates the current signature version. 
+
+Command(s):
+
+`sudo suricata -r [input_filename] -S [custom_rules_filename] -k none` 
+- `-r [input_filename]` specifies input files to process.
+- `-S [custom_rules_filename]` specifies rule file to use for the filter.
+- `-k none` instructs Suricata disable all checksum checks.(not warn about checksum errors)
+
+`jp . [JSON_file_path]`
+- `jp` instructs a command-line tool for processing JSON payload.
+- `.` instucts jp to take in all data from the [JSON_file_path].
+More `jq` Options:
+- `-c [selected_fields]` compact output into selected field(s)/object(s) only.
+>Example(s): `jq -c ".timestamp" filename`. \
+>If a specific object is inside a field: use `.[field][object]`.
+
+`jq "select([field/object(s)==[value]])" [file_path]`
+- `select(...)` is a jq function instucts a filter for a specific condition.
+- `[field/object(s)==[value]]` specifies a specific condition to filter.
+>Example: `jq "select(.flow_id == 1001)" file.json` 
+> - filters for data that has flow_id field equals 1001 from file.json.
+
