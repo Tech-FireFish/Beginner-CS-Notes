@@ -71,7 +71,7 @@
 - `{[key] : [value], ...}` specifies one or more key-value pairs.
 - Example(s) :
     - `{"Python" : 3.14}`
-    -
+    -   Organized format:
         ``` 
             { 
             "username": "coder123",
@@ -104,6 +104,46 @@
 # Conditional statements
 
 [GO BACK TO REFERENCES](#references)
+
+> A statement that evaluates code to determine if it meets a specified set of conditions.
+
+Model:
+
+```
+if [condition(s)]:
+    [action(s)]
+elif [condition(s)]:
+    [action(s)]
+else:
+    [action(s)]
+```
+- `if`: starts the conditional statement.
+- `[condition(s)]` : instructs conditions to verify.
+- `[action(s)]` : specifies execution(s) once the condition meets.
+- `elif` :(optional) instructs another condition statement if the first conditional statement is not true.
+- `else` : (optional) instrcuts action(s) to execute if one or more conditional statements fail.
+- Examples: 
+```
+if status == 200:
+    print("Successful")
+elif status == 400:
+    print("Fail")
+else:
+    print("Undefined errer")
+```
+
+> Operators used to compare numerical or string values:
+- `>` : Greater than.
+- `<` : Less than.
+- `>=` : Greater than or equal to.
+- `<=` : Less than or equal to.
+- `==` : Equal to.
+- `!=` : Not equal to.
+
+> Logical operators for multiple conditions:
+- `and` operator requires both conditions on either side of the operator to evaluate to True.
+- `or` operator requires one condition on either side of the operator to evaluate to True.
+- `not` operator negates a given condition so that it evaluates to `False` if the condition is `True` and to `True` if it is `False`.
 
 
 # Iterative statements
