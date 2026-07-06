@@ -1,15 +1,27 @@
 
 # References
-- []()
-
+- [Basics of Programming](#basics-of-programming)
+- [Data types](#data-types)
+- [Variables](#variables)
+- [Conditional Statements](#conditional-statements)
+- [Iterative Statements](#iterative-statements)
+- [Credits](#credits)
 
 # Basics of programming
+
+[GO BACK TO REFERENCES](#references)
+
 - `#` specifies comments that are only readable inside the script.
 - `print()` displays a specified object(s) to the screen.
     - > you can do mathematical expression directly using `print()`.
     - > `print(1+1)` outputs `2`.
+- `""` and `''` specifies string(s).
+- Numerical data DON NOT need quotation marks.
 
 # Data types
+
+[GO BACK TO REFERENCES](#references)
+
 **String :**
 >String data is data consisting of ordered sequence of characters, represented by double quotation(`""`) and signle quotation(`''`).
 - Both `""` and `''` specifies ordered sequences of characters.
@@ -76,12 +88,33 @@
 
 # Variables
 
+[GO BACK TO REFERENCES](#references)
+
+> A container that stores data. \
+> It can not be `True`, `False`, or `if`.
+- `[object] = [value]` assigns a specific value to an object.
+- `type()` procedure displays the data type of the input data.
+- Example(s) : 
+    - `username = "Tech-FireFish"`
+    - `username_list = ["name1", "name2",...]`
+    - `username_active = True`
+    - `username_id = 1234`
+
+
 # Conditional statements
 
+[GO BACK TO REFERENCES](#references)
+
+
 # Iterative statements
+
+[GO BACK TO REFERENCES](#references)
+
 
 
 # Credits
 
-- Tech-FireFish
-<!-- Google Cybersecurity Certificate -->
+[GO BACK TO REFERENCES](#references)
+
+- Tech-FireFish, contributor, [Profile_URL](https://github.com/Tech-FireFish)
+- Google Cybersecurity Professional Certificate instructed by Google Career Certificates on Coursera platform, May 4, 2023, [URL](https://www.coursera.org/professional-certificates/google-cybersecurity).
