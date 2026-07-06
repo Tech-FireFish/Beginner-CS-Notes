@@ -125,5 +125,5 @@ Example: `Left: 0px, Top:0px -> Plyer can't move over to the -1px area.`
 
 
 ## Credits
-- Godot Game Development – Crash Course for Beginners created by @CodingQuests on youtube freeCodeCamp.org Channel, Date(year/month/day) - 2023/4/18, [URL](https://www.youtube.com/watch?v=S8lMTwSRoRg).
+- Godot Game Development – Crash Course for Beginners created by @CodingQuests on youtube freeCodeCamp.org Channel, April 18 2023, [URL](https://www.youtube.com/watch?v=S8lMTwSRoRg).
 
