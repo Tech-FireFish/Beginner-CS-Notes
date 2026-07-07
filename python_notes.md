@@ -144,12 +144,16 @@ else:
 - `and` operator requires both conditions on either side of the operator to evaluate to True.
 - `or` operator requires one condition on either side of the operator to evaluate to True.
 - `not` operator negates a given condition so that it evaluates to `False` if the condition is `True` and to `True` if it is `False`.
+- `in` operator checks whether a given value is an element of a sequence.
+- `not in` operator checks whether a given value is NOT an element of a sequence.
 
 
 # Iterative statements
 
 [GO BACK TO REFERENCES](#references)
 
+> Code that repeatedly executes a set of instructions.
+- `for` loop, and `while` loop.
 
 
 # Credits
