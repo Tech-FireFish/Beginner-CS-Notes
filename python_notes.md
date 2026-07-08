@@ -153,8 +153,14 @@ else:
 [GO BACK TO REFERENCES](#references)
 
 > Code that repeatedly executes a set of instructions.
-- `for` loop, and `while` loop.
-
+- `for [loop_variable] [operator] [object(s)_list]: [action(s)]` specifies times of iteration in a specific sequence.
+- `range([start_value](optional),[end_value],[value_of_change](optional))` specifies a sequence that will increase/decrease by a specific numerical value and only stops when the one value before the end_value is reached.
+    - `range([end_value])` specifies a sequence starts with zero(0) with value increase by one each time, ends by one value before the end_value.
+- `while [condition(s)] : [action(s)]` instructs the program to repeatively execute action(s) until the condition(s) have evaluate to True.
+    - `while [loop_variable] [operator] [numerical_value] : [action(s)]` specifies an iteration that will continue and repeat until the numberical_value has reached.
+- `break` keyword instructs to break out of a loop.
+- `continue` keyword instructs to skip a loop iteration and continue with the next one.
+- `Ctrl + Z` to break infinite loops.
 
 # Credits
 
