@@ -257,6 +257,34 @@ while i < 10:
 
 [GO BACK TO REFERENCES](#references)
 
+- `str()` converts object(s) into strings.
+- `len()` count the characters used in object(s).
+
+**Method :**
+> A function that belongs to a specific data type.
+- `upper()` returns a string in all uppercase letters.
+- Example(s) : `print("Hello".upper())` outputs `HELLO`.
+- `lower()` returns a string in all lowercase letters.
+- Example(s) : `print("Hello".lower())` outputs `hello`.
+
+**Bracket notation :**
+> bracket notation refers to indices plcaed in a square bracket, it extracts a a part of a string.
+- "[string(s)][index_number]" specifies a specific set of chacarter(s) from a string.
+- Example(s) : 
+    - `["Hello"][0]` outputs `H` as index starts with 0.
+    - `["Hello"][4]` outputs `o` as index 4 is the last character.
+    - `["Hello"][0:2]` outputs `Hel` as its first three characters are `H`,`e` and `l`.
+- `index()` method finds the first occurrence of the input in a string and returns its location.
+
+**Immutable :**
+> Cannot be changed after it is created and assigned a value.
+
+**Concatenation :**
+>Concatenation is a process that allows you to merge strings together. The addition operator (+) in Python allows you to concatenate two strings.
+- Emample(s) :
+    - `print("hello" + "world")` outputs `helloworld`.
+    - `print("hello" + " world")` outputs `hello world`.
+
 
 # Writing algorithms
 
