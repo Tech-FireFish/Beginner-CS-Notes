@@ -200,13 +200,43 @@ else:
 - Example(s) : 
     - `greet_to_someone("Tech_FireFish")`, "Tech_FireFish" is the argument
 
+**Return statement :**
+> A statement that executes inside a function and sends infomraiton back to the function call.
+- `return` keyword returns information from a function.
+
+**Global variables :**
+> Global variables are variables accessible throughout the program.
+
+**Local variables :**
+> Local variables are parameters and variables assigned within a function that aren't usable outside of a function.
+
+
 # Modules and libraries 
 
+- `print([object(s)])` outputs a specified object to the screen. 
+- `type([object(s)])` returns the data type of its argument.
+- `max([object(s)])` returns the largest numeric input passed into it
+- `min([object(s)])` returns the smallest numeric input passed into it
+- `sorted([object(s)])` sorts the components of a list. 
+
+**Liberary :**
+> A collection of modules that provide code user can access in their programs.
+
+**Module :**
+> A file that contains addititional functions, variables, classes and any kind of runnable code.
+- `import [module_name]` searches for a module or library in a system and adds it to the local Python environment.
+- `from [library_name] import [module_name] imports a specific function from the Python Standard Library.
+
+**Install external library :**
+- `%pip install [library_name]` installs the inputed library(s).
 
 # Code readability
 
+- `#` starts a line that contains a Python comment
 
+- `"""` documentation strings starts and ends a multi-line string that is often used as a Python comment; multi-line comments are used when you need more than 79 characters in a single comment. 
 
+- [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
 
 # Credits
 
