@@ -5,6 +5,9 @@
 - [Variables](#variables)
 - [Conditional Statements](#conditional-statements)
 - [Iterative Statements](#iterative-statements)
+- [Functions](#functions)
+- [Modules and Libraries](#modules-and-libraries)
+- [Code Readability](#code-readability)
 - [Credits](#credits)
 
 # Basics of programming
@@ -89,7 +92,7 @@
 # Variables
 
 [GO BACK TO REFERENCES](#references)
-
+**Variable :**
 > A container that stores data. \
 > It can not be `True`, `False`, or `if`.
 - `[object] = [value]` assigns a specific value to an object.
@@ -105,6 +108,7 @@
 
 [GO BACK TO REFERENCES](#references)
 
+**Conditional statments :**
 > A statement that evaluates code to determine if it meets a specified set of conditions.
 
 Model:
@@ -131,7 +135,7 @@ elif status == 400:
 else:
     print("Undefined errer")
 ```
-
+**Operators :**
 > Operators used to compare numerical or string values:
 - `>` : Greater than.
 - `<` : Less than.
@@ -140,6 +144,7 @@ else:
 - `==` : Equal to.
 - `!=` : Not equal to.
 
+**Logical operators :**
 > Logical operators for multiple conditions:
 - `and` operator requires both conditions on either side of the operator to evaluate to True.
 - `or` operator requires one condition on either side of the operator to evaluate to True.
@@ -152,15 +157,45 @@ else:
 
 [GO BACK TO REFERENCES](#references)
 
-> Code that repeatedly executes a set of instructions.
+**For loop :**
+> Perform tasks that involve iterating through lists a predetermined number of times. 
 - `for [loop_variable] [operator] [object(s)_list]: [action(s)]` specifies times of iteration in a specific sequence.
+
+**While loop :**
+> Perform tasks based on certain conditions evaluating to True.
+- `while [condition(s)] : [action(s)]` instructs the program to repeatively execute action(s) until the condition(s) have evaluate to True.
+
+*Different forms:*
+- `while [loop_variable] [operator] [numerical_value] : [action(s)]` specifies an iteration that will continue and repeat until the numberical_value has reached.
+
+**Good to know :**
 - `range([start_value](optional),[end_value],[value_of_change](optional))` specifies a sequence that will increase/decrease by a specific numerical value and only stops when the one value before the end_value is reached.
     - `range([end_value])` specifies a sequence starts with zero(0) with value increase by one each time, ends by one value before the end_value.
-- `while [condition(s)] : [action(s)]` instructs the program to repeatively execute action(s) until the condition(s) have evaluate to True.
-    - `while [loop_variable] [operator] [numerical_value] : [action(s)]` specifies an iteration that will continue and repeat until the numberical_value has reached.
 - `break` keyword instructs to break out of a loop.
 - `continue` keyword instructs to skip a loop iteration and continue with the next one.
 - `Ctrl + Z` to break infinite loops.
+
+
+# Functions
+> A section of code that can be reused in a program.
+
+**Define a Func :**
+- `def [func_name](): [action(s)]` defines a function with a specific name and blocks of code to execute.
+- Example(s):
+    - `def print_hello_world(): print("Hello World")`
+
+**Func call :**
+- `[func_name]()` instruct the system to execute actions inside this function.
+- Examples:
+    - `print_hello_world()`
+
+# Modules and libraries 
+
+
+# Code readability
+
+
+
 
 # Credits
 
