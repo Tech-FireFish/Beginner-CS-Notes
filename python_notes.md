@@ -189,6 +189,17 @@ else:
 - Examples:
     - `print_hello_world()`
 
+**Parameter :**
+> An object that is included in a function defition for use in that function.
+- `def [func_name]([parameter]): [func_body]` specifies a function with input object required.
+- Example(s) : 
+    - `def greet_to_someone(name): print("Hello " + name)`
+
+**Argument**
+> The data brought into a function when it is called.
+- Example(s) : 
+    - `greet_to_someone("Tech_FireFish")`, "Tech_FireFish" is the argument
+
 # Modules and libraries 
 
 
