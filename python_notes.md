@@ -8,6 +8,9 @@
 - [Functions](#functions)
 - [Modules and Libraries](#modules-and-libraries)
 - [Code Readability](#code-readability)
+- [Working with strings and lists](#working-with-strings-and-lists)
+- [Writing algorithms](#writing-algorithms)
+- [Using regular expressions](#using-regular-expressions)
 - [Credits](#credits)
 
 # Basics of programming
@@ -92,6 +95,7 @@
 # Variables
 
 [GO BACK TO REFERENCES](#references)
+
 **Variable :**
 > A container that stores data. \
 > It can not be `True`, `False`, or `if`.
@@ -112,7 +116,6 @@
 > A statement that evaluates code to determine if it meets a specified set of conditions.
 
 Model:
-
 ```
 if [condition(s)]:
     [action(s)]
@@ -160,10 +163,18 @@ else:
 **For loop :**
 > Perform tasks that involve iterating through lists a predetermined number of times. 
 - `for [loop_variable] [operator] [object(s)_list]: [action(s)]` specifies times of iteration in a specific sequence.
+- Example(s) : `for i in range(0,10): print(i)` displays 0-9 on the screen.
 
 **While loop :**
 > Perform tasks based on certain conditions evaluating to True.
 - `while [condition(s)] : [action(s)]` instructs the program to repeatively execute action(s) until the condition(s) have evaluate to True.
+- Example(s) : The following will print 1 to 9:
+```
+i = 0 
+while i < 10: 
+    print(i)
+    i = i + 1 
+```
 
 *Different forms:*
 - `while [loop_variable] [operator] [numerical_value] : [action(s)]` specifies an iteration that will continue and repeat until the numberical_value has reached.
@@ -177,6 +188,9 @@ else:
 
 
 # Functions
+
+[GO BACK TO REFERENCES](#references)
+
 > A section of code that can be reused in a program.
 
 **Define a Func :**
@@ -213,6 +227,8 @@ else:
 
 # Modules and libraries 
 
+[GO BACK TO REFERENCES](#references)
+
 - `print([object(s)])` outputs a specified object to the screen. 
 - `type([object(s)])` returns the data type of its argument.
 - `max([object(s)])` returns the largest numeric input passed into it
@@ -233,10 +249,24 @@ else:
 # Code readability
 
 - `#` starts a line that contains a Python comment
-
 - `"""` documentation strings starts and ends a multi-line string that is often used as a Python comment; multi-line comments are used when you need more than 79 characters in a single comment. 
-
 - [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
+
+
+# Working with strings and lists
+
+[GO BACK TO REFERENCES](#references)
+
+
+# Writing algorithms
+
+[GO BACK TO REFERENCES](#references)
+
+
+# Using regular expressions
+
+[GO BACK TO REFERENCES](#references)
+
 
 # Credits
 
