@@ -302,6 +302,49 @@ while i < 10:
 
 [GO BACK TO REFERENCES](#references)
 
+> A sequence of characters that forms a pattern
+
+**Basics :**
+- `re.findall([regular_expression], [a string])` returns a list of matches to a regular expression.
+- `+` represents one or more occurences of a specific character.
+- Examples : 
+    - `a+` matches `a`, `aa`, `aaaaa`,...
+- `\w` matches with any alphanumeric character but it doesn't macth symbols.    
+- Examples :
+    - `a\w` indicates a string that starts with `a` and it's joined with one alphanumeric characters after.
+
+**Symbol for character types :**
+> form a pattern for your regular expression. 
+
+- `+` represents one or more occurences of a specific character.
+- Examples : 
+    - `a+` matches `a`, `aa`, `aaaaa`,...
+- `\w` matches with any alphanumeric character but it doesn't macth symbols.    
+- Examples :
+    - `a\w` indicates a string that starts with `a` and it's joined with one alphanumeric characters after.
+    - `a\w+` indicates a string that starts with `a` and it's joined with one or more alphanumeric characters after.
+    - `a\w+a` indicates a string that starts and ends with `a` and it's joined with any alphanumeric characters in between.
+    - `\w+a` indicates a string that ends with `a` and it's joined with any alphanumeric characters before.
+- `\d` matches with any single digit(0-9). 
+- Examples :
+    - `re.findall("\d+", "user123")` outputs `['123']`.
+- `\s` matches with any single whitespace character (space, tab, newline).
+- Examples : 
+    - `re.findall("\w+\s", "user 123 ")` outputs `['user ', '123 ']`.
+- `.` matches with any characters (letters, spaces, symbols, digits) except for a newline.
+- `\.` Matches the literal period character `.`, a backslash `\` is necessary to escape the special meaning of the dot `.`.
+
+***NOTICE !!!***
+> When you try to join a period/dot using `+` sign, add a backslash before it like this: `\.`.
+
+> If you trigger a `SyntaxWarning` with `"\w"`, add a letter `r` before your regular expression, like this: re.findall(r"[regular_expression]", [])
+
+- Examples : `\w + @\w + \.\w` can be use to match with email addresses; Other way to look at this expression is : `___@___.___`.
+
+**Symbol to quantify occurences :**
+
+- `+` quantifies one more occurences.
+- `*` quantifies zero, one, or more occurrences.
 
 # Credits
 
