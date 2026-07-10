@@ -290,6 +290,13 @@ while i < 10:
 
 [GO BACK TO REFERENCES](#references)
 
+> A set of rules that solve a problem.
+
+- `.insert([position], [object_to_insert])` method adds an element in a specific position inside a list.
+- `.remove([object_to_remove])` method removes the first occurrence of a specific element in a list. NOT all occurences.
+- `.append([object])` method adds input to the end of a list. 
+- `.index([object])` method finds the first occurrence of an element in a list and returns its index.
+
 
 # Using regular expressions
 
