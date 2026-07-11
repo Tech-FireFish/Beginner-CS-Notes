@@ -345,6 +345,12 @@ while i < 10:
 
 - `+` quantifies one more occurences.
 - `*` quantifies zero, one, or more occurrences.
+- `{[numeric_value]}` specifies for a specific occurences.
+    - `\d{n}` specifies a specific number of digit per string.
+- `{n,n}` specifies between m(minimum) and n(maximum) occurences.
+    - `\d{n,n}` specifies a specific range of digit per string.
+
+
 
 # Credits
 
