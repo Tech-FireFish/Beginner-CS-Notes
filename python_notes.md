@@ -396,13 +396,22 @@ print(updates)
 - `.split([parse_string])` method converts a string into a list.
 > The default parse_string is whitespace
 - `.join()` method concatenates the elements of a lsit into a string.
-
+- Examples : 
+    - list = " ".join(list)
+    > Specifies what to include between each element. Here, it's a whitespace.
 
 # Debugging code
 
 [GO BACK TO REFERENCES](#references)
 
+**Syntax errors :**
+>A syntax error is an error that involves invalid usage of a programming language.
 
+**Logic error :**
+>A logic error is an error that results when the logic used in code produces unintended results. 
+
+**Exception :**
+>An exception is an error that involves code that cannot be executed even though it is syntactically correct.
 
 # Credits
 
