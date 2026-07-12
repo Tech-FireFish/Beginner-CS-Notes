@@ -11,6 +11,9 @@
 - [Working with strings and lists](#working-with-strings-and-lists)
 - [Writing algorithms](#writing-algorithms)
 - [Using regular expressions](#using-regular-expressions)
+- [Opening and reading file](#opening-and-reading-files)
+- [Parsing files](#parsing-files)
+- [Debugging code](#debugging-code)
 - [Credits](#credits)
 
 # Basics of programming
@@ -246,6 +249,7 @@ while i < 10:
 **Install external library :**
 - `%pip install [library_name]` installs the inputed library(s).
 
+
 # Code readability
 
 - `#` starts a line that contains a Python comment
@@ -349,6 +353,54 @@ while i < 10:
     - `\d{n}` specifies a specific number of digit per string.
 - `{n,n}` specifies between m(minimum) and n(maximum) occurences.
     - `\d{n,n}` specifies a specific range of digit per string.
+
+
+# Opening and reading files
+
+[GO BACK TO REFERENCES](#references)
+
+**Opening files :**
+
+```
+with open([file_path], [option(s)]) as [variable_name]:
+    [variable] = [variable_name].read()
+print([variable])
+```
+
+Example:
+
+```
+with open("python_notes.md", "r") as file:
+    updates = file.read()
+print(updates)
+```
+
+- `with` keyword handles errors and exteral resources when used with other functions.
+- `open([file_path], [option(s)])` functioin opens a file in Python.
+    - Option(s) include : 
+        - `"r"` for read
+        - `"w"` for create/write a file.
+        - `"a"` append new information to the end of an existing file.
+- `as` assigns a variable as reference to the output of open() function.
+
+**Reading files :**
+- `read()` method converts file into strings.
+- Examples :
+    - `updates = variable_name.read()` assigns updates a set of strings from 
+
+# Parsing files
+
+[GO BACK TO REFERENCES](#references)
+
+> The process of converting data into a more readable format.
+- `.split([parse_string])` method converts a string into a list.
+> The default parse_string is whitespace
+- `.join()` method concatenates the elements of a lsit into a string.
+
+
+# Debugging code
+
+[GO BACK TO REFERENCES](#references)
 
 
 
