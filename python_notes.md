@@ -20,10 +20,10 @@
 
 [GO BACK TO REFERENCES](#references)
 
-- `#` specifies comments that are only readable inside the script.
+- `#` creates a comment that is ignored by Python when running a program.
 - `print()` displays a specified object(s) to the screen.
     - > you can do mathematical expression directly using `print()`.
-    - > `print(1+1)` outputs `2`.
+    - > `print(1+1)` evaluates the expression first, then prints result  `2`.
 - `""` and `''` specifies string(s).
 - Numerical data DON NOT need quotation marks.
 
@@ -77,7 +77,7 @@
 
 **Dictionary :**
 > Dictionary data is data that consists of one or more key-value pairs. Each key is mapped to a value.
-- `{[key] : [value], ...}` specifies one or more key-value pairs.
+- `{[key] : [value]}` specifies one or more key-value pairs.
 - Example(s) :
     - `{"Python" : 3.14}`
     -   Organized format:
@@ -101,7 +101,7 @@
 
 **Variable :**
 > A container that stores data. \
-> It can not be `True`, `False`, or `if`.
+> It can not be these keywords: `True`, `False`, or `if`.
 - `[object] = [value]` assigns a specific value to an object.
 - `type()` procedure displays the data type of the input data.
 - Example(s) : 
@@ -131,7 +131,7 @@ else:
 - `[condition(s)]` : instructs conditions to verify.
 - `[action(s)]` : specifies execution(s) once the condition meets.
 - `elif` :(optional) instructs another condition statement if the first conditional statement is not true.
-- `else` : (optional) instrcuts action(s) to execute if one or more conditional statements fail.
+- `else` : (optional) instructs action(s) to execute if one or more conditional statements fail.
 - Examples: 
 ```
 if status == 200:
@@ -139,7 +139,7 @@ if status == 200:
 elif status == 400:
     print("Fail")
 else:
-    print("Undefined errer")
+    print("Undefined error")
 ```
 **Operators :**
 > Operators used to compare numerical or string values:
@@ -155,7 +155,7 @@ else:
 - `and` operator requires both conditions on either side of the operator to evaluate to True.
 - `or` operator requires one condition on either side of the operator to evaluate to True.
 - `not` operator negates a given condition so that it evaluates to `False` if the condition is `True` and to `True` if it is `False`.
-- `in` operator checks whether a given value is an element of a sequence.
+- `in` operator checks whether whether a value is an element of a sequence.
 - `not in` operator checks whether a given value is NOT an element of a sequence.
 
 
@@ -170,7 +170,7 @@ else:
 
 **While loop :**
 > Perform tasks based on certain conditions evaluating to True.
-- `while [condition(s)] : [action(s)]` instructs the program to repeatively execute action(s) until the condition(s) have evaluate to True.
+- `while [condition(s)] : [action(s)]` instructs the program to repeatedly execute action(s) until the condition(s) have evaluate to True.
 - Example(s) : The following will print 1 to 9:
 ```
 i = 0 
@@ -184,10 +184,11 @@ while i < 10:
 
 **Good to know :**
 - `range([start_value](optional),[end_value],[value_of_change](optional))` specifies a sequence that will increase/decrease by a specific numerical value and only stops when the one value before the end_value is reached.
-    - `range([end_value])` specifies a sequence starts with zero(0) with value increase by one each time, ends by one value before the end_value.
+    - `range([n])` generates values from 0 to n-1
 - `break` keyword instructs to break out of a loop.
 - `continue` keyword instructs to skip a loop iteration and continue with the next one.
-- `Ctrl + Z` to break infinite loops.
+- Ctrl + C interrupts Python program (common)
+- Ctrl + Z suspends process (Linux/terminal behavior varies)
 
 
 # Functions
@@ -207,7 +208,7 @@ while i < 10:
     - `print_hello_world()`
 
 **Parameter :**
-> An object that is included in a function defition for use in that function.
+> An object that is included in a function definition for use in that function.
 - `def [func_name]([parameter]): [func_body]` specifies a function with input object required.
 - Example(s) : 
     - `def greet_to_someone(name): print("Hello " + name)`
@@ -218,7 +219,7 @@ while i < 10:
     - `greet_to_someone("Tech_FireFish")`, "Tech_FireFish" is the argument
 
 **Return statement :**
-> A statement that executes inside a function and sends infomraiton back to the function call.
+> A statement that executes inside a function and sends information back to the function call.
 - `return` keyword returns information from a function.
 
 **Global variables :**
@@ -238,13 +239,13 @@ while i < 10:
 - `min([object(s)])` returns the smallest numeric input passed into it
 - `sorted([object(s)])` sorts the components of a list. 
 
-**Liberary :**
+**Library :**
 > A collection of modules that provide code user can access in their programs.
 
 **Module :**
 > A file that contains addititional functions, variables, classes and any kind of runnable code.
 - `import [module_name]` searches for a module or library in a system and adds it to the local Python environment.
-- `from [library_name] import [module_name] imports a specific function from the Python Standard Library.
+- `from [module_name] import [function_name] imports a specific function from the Python Standard Library.
 
 **Install external library :**
 - `%pip install [library_name]` installs the inputed library(s).
@@ -272,8 +273,8 @@ while i < 10:
 - Example(s) : `print("Hello".lower())` outputs `hello`.
 
 **Bracket notation :**
-> bracket notation refers to indices plcaed in a square bracket, it extracts a a part of a string.
-- "[string(s)][index_number]" specifies a specific set of chacarter(s) from a string.
+> bracket notation refers to indices placed in a square bracket, it extracts a a part of a string.
+- "[string(s)][index_number]" specifies a specific set of character(s) from a string.
 - Example(s) : 
     - `["Hello"][0]` outputs `H` as index starts with 0.
     - `["Hello"][4]` outputs `o` as index 4 is the last character.
@@ -285,7 +286,7 @@ while i < 10:
 
 **Concatenation :**
 >Concatenation is a process that allows you to merge strings together. The addition operator (+) in Python allows you to concatenate two strings.
-- Emample(s) :
+- Example(s) :
     - `print("hello" + "world")` outputs `helloworld`.
     - `print("hello" + " world")` outputs `hello world`.
 
@@ -297,7 +298,7 @@ while i < 10:
 > A set of rules that solve a problem.
 
 - `.insert([position], [object_to_insert])` method adds an element in a specific position inside a list.
-- `.remove([object_to_remove])` method removes the first occurrence of a specific element in a list. NOT all occurences.
+- `.remove([object_to_remove])` method removes the first occurrence of a specific element in a list. NOT all occurrences.
 - `.append([object])` method adds input to the end of a list. 
 - `.index([object])` method finds the first occurrence of an element in a list and returns its index.
 
@@ -310,20 +311,14 @@ while i < 10:
 
 **Basics :**
 - `re.findall([regular_expression], [a string])` returns a list of matches to a regular expression.
-- `+` represents one or more occurences of a specific character.
-- Examples : 
-    - `a+` matches `a`, `aa`, `aaaaa`,...
-- `\w` matches with any alphanumeric character but it doesn't macth symbols.    
-- Examples :
-    - `a\w` indicates a string that starts with `a` and it's joined with one alphanumeric characters after.
 
 **Symbol for character types :**
 > form a pattern for your regular expression. 
 
-- `+` represents one or more occurences of a specific character.
+- `+` represents one or more occurrences of a specific character.
 - Examples : 
     - `a+` matches `a`, `aa`, `aaaaa`,...
-- `\w` matches with any alphanumeric character but it doesn't macth symbols.    
+- `\w` matches with any alphanumeric character but it doesn't match symbols.    
 - Examples :
     - `a\w` indicates a string that starts with `a` and it's joined with one alphanumeric characters after.
     - `a\w+` indicates a string that starts with `a` and it's joined with one or more alphanumeric characters after.
@@ -345,13 +340,13 @@ while i < 10:
 
 - Examples : `\w + @\w + \.\w` can be use to match with email addresses; Other way to look at this expression is : `___@___.___`.
 
-**Symbol to quantify occurences :**
+**Symbol to quantify occurrences :**
 
-- `+` quantifies one more occurences.
+- `+` quantifies one more occurrences.
 - `*` quantifies zero, one, or more occurrences.
-- `{[numeric_value]}` specifies for a specific occurences.
+- `{[numeric_value]}` specifies for a specific occurrences.
     - `\d{n}` specifies a specific number of digit per string.
-- `{n,n}` specifies between m(minimum) and n(maximum) occurences.
+- `{n,n}` specifies between m(minimum) and n(maximum) occurrences.
     - `\d{n,n}` specifies a specific range of digit per string.
 
 
@@ -375,8 +370,8 @@ with open("python_notes.md", "r") as file:
 print(updates)
 ```
 
-- `with` keyword handles errors and exteral resources when used with other functions.
-- `open([file_path], [option(s)])` functioin opens a file in Python.
+- `with` keyword handles errors and external resources when used with other functions.
+- `open([file_path], [option(s)])` function opens a file in Python.
     - Option(s) include : 
         - `"r"` for read
         - `"w"` for create/write a file.
@@ -397,7 +392,7 @@ print(updates)
 > The default parse_string is whitespace
 - `.join()` method concatenates the elements of a lsit into a string.
 - Examples : 
-    - list = " ".join(list)
+    - variable = " ".join(list)
     > Specifies what to include between each element. Here, it's a whitespace.
 
 # Debugging code
