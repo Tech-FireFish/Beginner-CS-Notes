@@ -17,7 +17,7 @@
 <!-- EMPHASIS -->
 
 # *EMPHASIS* and **EMPHASIS**
-
+[GO BACK TO REFERENCE](#reference)
 ## PART I
 
 _INPUT:_
@@ -65,6 +65,7 @@ _OUTPUT:_
 <!-- PARAGRAPHS -->
 
 # PARAGRAPHS
+[GO BACK TO REFERENCE](#reference)
 
 PARAGRAPHS \
 PARAGRAPHS \
@@ -111,10 +112,11 @@ _OUTPUT:_
 #
 <!-- HEADINGS -->
 # HEADINGS
+[GO BACK TO REFERENCE](#reference)
 
-EXPLAINS:
+EXPLAIN:
 ```
-Starting a line with a hash `#` and a space makes a header.
+Starting a line with a hash `#` and a space makes a heading.
 
 The more `#`, the smaller the header.
 ```
@@ -161,6 +163,7 @@ _OUTPUT:_
 #
 <!-- BLOCKQUOTES -->
 # BLOCKQUOTES
+[GO BACK TO REFERENCE](#reference)
 
 EXPLAIN:
 ```
@@ -209,12 +212,13 @@ _OUTPUT:_
 #
 <!-- LISTS -->
 # LISTS
+[GO BACK TO REFERENCE](#reference)
 
-EXAPLAIN:
+EXPLAIN:
 ```
 Unordered lists can use either asterisks '*', plus '+', or hyphens '-' as list markers.
 
-Ordered lists use numbers followed by period '.' or right paren ')'.
+Ordered lists use a number followed by either a period (.) or a right parenthesis ), depending on the Markdown implementation.
 ```
 
 ## EXAMPLES
@@ -265,8 +269,9 @@ _OUTPUT:_
 #
 <!-- LINKS -->
 # LINKS
+[GO BACK TO REFERENCE](#reference)
 
-EXPLAINS:
+EXPLAIN:
 ```
 Links can be either inline with the text, or placed at the bottom of the text as references.
 
@@ -286,7 +291,7 @@ _OUTPUT:_
 >You can do anything at <https://github.com/>
 
 ## USAGE 2 `["name"]("url/header")`
->If the ["header"] contains a '/', ignore it and join the words together. \
+>When linking to a heading, Markdown generates an anchor by converting the heading to lowercase, removing most punctuation, and replacing spaces with hyphens `-`. If the heading contains `/`, omit it from the generated anchor. \
 > Examples: `[IDS/IPS Suricata](#idsips-suricata)`.
 
 _INPUT:_
@@ -315,10 +320,11 @@ _OUTPUT:_
 #
 <!-- IMAGES -->
 # IMAGES
+[GO BACK TO REFERENCE](#reference)
 
 EXPLAIN:
 ```
-Images are almost identical to links, but an image starts with an exclamation point !.
+Images use the same syntax as links but begin with an exclamation mark (!).
 ```
 
 ## EXAMPLES
@@ -354,12 +360,13 @@ _OUTPUT:_
 #
 <!-- CODE -->
 # CODE
+[GO BACK TO REFERENCE](#reference)
 
 EXPLAIN:
 ```
 To create inline code, wrap with backticks `.
 
-To create a code block, either indent each line by 4 spaces, or place 3 backticks ``` on a line above and below the code block.
+To create a code block, either indent each line by 4 spaces, or place three backticks (```) on a line before and after the code block.
 ```
 
 # USAGE 1 `code`:
@@ -422,6 +429,7 @@ _OUTPUT:_
 #
 <!-- NESTED LISTS -->
 # NESTED LISTS
+[GO BACK TO REFERENCE](#reference)
 
 EXPLAIN: 
 ```
