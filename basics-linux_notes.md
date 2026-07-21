@@ -4,15 +4,23 @@
 ## Reference
 
 - [List of Commands](#list-of-commands)
-
+- [Permission Distribution](#permission-distribution)
+- [SQL Database Query](#sql-database-query)
+- [Filter Operation Usage](#filter-operation-usage)
+- [SQL Join Usage](#sql-join-usage)
+- [More](#more)
 - [Encryption Specials](#encryption-specials)
     - [Caesar Cipher](#caesar-cipher)
+    - [Openssl Cipher](#openssl-cipher)
+    - [Hash Cipher](#hash-cipher)
 - [Network Protocol Analyzer](#network-protocol-analyzer)
 - [IDS/IPS Suricata](#idsips-suricata)
+- [GOOD TO EXPLORE](#good-to-explore)
 
 <!-- List pf Commands -->
 
 ## List of commands: 
+[GO BACK](#intro)
 
 `whatis "command“`
 - Description: Outputs description about the "command"
@@ -55,8 +63,8 @@
 - If "newDirectoryPath" is one dir before the current dir, uses ../"path"
 - OR mv "file" "newFileName" - renames "file"
 
-`cd "file"`
-- Connect to file
+`cd "directory"`
+- Change the current working directory.
 
 `cd ../`
 - Connect one directory before current directory
@@ -65,10 +73,10 @@
 - Delete "file"
 
 `rm -r "file"`
-- Remove "file" with force
+- Remove "file" with recursive
 
 `touch "path"/"file"`
-- Create and navigate "file" in "path"
+- Creates an empty file (if it doesn't exist) or updates its timestamp.
 
 `mkdir`
 - Create directory
@@ -78,7 +86,7 @@
 
 `echo "message" -  "file"`
 - Print/write "message" into "file"
-- ">" does overwrite/append
+- ">" does overwrite, ">>" does append
 
 `echo "hell world"  >> "file"`
 - ">>" does append the content
@@ -87,7 +95,7 @@
 - Read/write "file" content into "file2"
 
 `echo "content ${another command}"`
-- ${} allows a command inside another command.
+- ${} is parameter expansion.
 
 `expr "calculation"`
 - Expression allows calculation
@@ -128,7 +136,7 @@
 
 
 ## PERMISSION DISTRIBUTION
-
+[GO BACK](#intro)
 
 `chmod "user/group/other""-/+""r/w/x" "file_name"`
 
@@ -191,7 +199,7 @@
 
 
 ## SQL DATABASE QUERY
-
+[GO BACK](#intro)
 
 `SELECT "column_name" FROM "table_name";`
 
@@ -230,7 +238,7 @@
 
 
 ## FILTER OPERATION USAGE
-
+[GO BACK](#intro)
 
 `SELECT "column_name" FROM "table_name" WHERE "column_name" "operator_sign" "compare_value";`
 
@@ -250,9 +258,10 @@
 
 
 ## SQL JOIN USAGE
+[GO BACK](#intro)
 
-
-```SELECT "column_name"
+```
+SELECT "column_name"
 FROM "table1_name" INNER JOIN "table2_name" 
 ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
 ```
@@ -260,7 +269,8 @@ ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
 - You must specify the two tables to join by including the first or left table after FROM and the second or right table after INNER JOIN.
 
 
-```SELECT "column_name"
+```
+SELECT "column_name"
 FROM "table1_name" LEFT JOIN "table2_name" 
 ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
 ```
@@ -268,7 +278,8 @@ ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
 - You MIGHT think "=" as "and".
 
 
-```SELECT "column_name"
+```
+SELECT "column_name"
 FROM "table1_name" Right JOIN "table2_name" 
 ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
 ```
@@ -284,6 +295,7 @@ ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
 - FULL OUTER JOIN query include all records from both tables. Similar to INNER JOIN, the order of tables does not change the results of the query. 
 
 ## MORE
+[GO BACK](#intro)
 
 `SELECT AVG("numerical_data")`
 - Returns a single number that represents the average of the numerical data in a column;
@@ -298,7 +310,7 @@ ON 'table1_name'+".'column_name'" = 'table2_name'+."'column_name'";
 
 
 ## Caesar Cipher
-
+[GO BACK](#intro)
 
 ```
 tr "order_of_alphabeta" "expected_order_of_alphabeta"
@@ -378,12 +390,12 @@ __OUTPUT:__
 
 
 ## HASH CIPHER
-
+[GO BACK](#intro)
 
 ```
 sha256sum 'file_name/content'
 ```
-- generate an unique Hash-256 key for `file_name`.
+- Computes the SHA-256 hash (digest) of a `file_name` or standard input.
 
 `cmp`
 - compare the two files byte by byte. If a difference is found, the command reports the byte and line number where the first difference is found.
@@ -407,7 +419,7 @@ sha256sum 'file_name/content'
 - `and`, `or`, `not` specifies boolean operators.
 
 `curl [url]`
-- `curl` sends requests to a specific IP Address.
+- `curl` sends HTTP, HTTPS, FTP, and other protocol requests to a URL or IP address.
 
 
 ## IDS/IPS Suricata
@@ -448,9 +460,45 @@ More `jq` Options:
 >Example(s): `jq -c ".timestamp" filename`. \
 >If a specific object is inside a field: use `.[field][object]`.
 
-`jq "select([field/object(s)==[value]])" [file_path]`
+`jp "select([field/object(s)==[value]])" [file_path]`
 - `select(...)` is a jq function instucts a filter for a specific condition.
 - `[field/object(s)==[value]]` specifies a specific condition to filter.
->Example: `jq "select(.flow_id == 1001)" file.json` 
+>Example: `jp "select(.flow_id == 1001)" file.json` 
 > - filters for data that has flow_id field equals 1001 from file.json.
 
+## Good To Explore
+[GO BACK](#intro)
+
+- `history` : View previously executed commands.
+- `whoami` : Display the username of the current user.
+- `uname -a` : Display detailed system information, including the kernel version and architecture.
+- `hostname` : Display the system's hostname.
+- `file "file_name"` : Determine the type of a file based on its contents.
+- `stat "file_name"` : Display detailed information about a file, such as permissions, size, and timestamps.
+- `wc "file_name"` : Count the number of lines, words, and bytes in a file.
+    - `-l` counts lines only.
+    - `-w` counts words only.
+    - `-c` counts bytes only.
+- `sort "file_name"` : Sort the lines of a file alphabetically or numerically.
+- `uniq "file_name"` : Remove or display consecutive duplicate lines.
+    - Often used together with `sort`.
+- `cut -d "delimiter" -f "field_number" "file_name"` : Extract specific columns or fields from each line of a file.
+- `awk '{print $1}' "file_name"` : Process and manipulate text by columns or fields.
+- `sed 's/old_text/new_text/' "file_name"` : Search for and replace text in a stream or file.
+- `xargs` : Convert standard input into command-line arguments for another command.
+    - Example: `cat file.txt | xargs rm`
+- `ps` : Display currently running processes.
+    - `ps -ef` displays all running processes.
+- `kill "PID"` : Terminate a process using its Process ID (PID).
+- `top` : Display real-time information about running processes and system resource usage.
+- `htop` : An interactive version of `top` with a more user-friendly interface.
+- `df -h` : Display disk space usage in a human-readable format.
+- `du -sh "directory"` : Display the total size of a directory in a human-readable format.
+- `tar`
+    - `tar -cvf archive.tar directory/` : Create a tar archive.
+    - `tar -xvf archive.tar` : Extract a tar archive.
+- `zip archive.zip "file_name"` : Compress one or more files into a ZIP archive.
+- `unzip archive.zip` : Extract the contents of a ZIP archive.
+- `ssh username@hostname` : Securely connect to a remote Linux machine using SSH.
+- `scp "file_name" username@hostname:/destination/path` : Securely copy files between computers over SSH.
+- `wget "url"` : Download a file from the internet using its URL.
