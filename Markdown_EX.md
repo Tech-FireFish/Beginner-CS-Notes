@@ -1,18 +1,19 @@
-# CREDITS - https://commonmark.org/ 
-# TUTORIAL LINK: https://commonmark.org/help/tutorial/
+# CREDITS 
+- Tech-FireFish, Contributor, [Profile_URL](https://github.com/Tech-FireFish)
+- Markdown Tutorial provided by John MacFarlane and his team on Commonmark website, 2014, [URL](https://commonmark.org/help/tutorial/)
 
 # Reference:
 
-[Emphasis](#emphasis-and-emphasis)\
-[Paragraph](#paragraphs)\
-[Headings](#headings)\
-[Blockquotes](#blockquotes)\
-[Lists](#lists)\
-[Links](#links)\
-[Images](#images)\
-[Code](#code)\
-[Nested Lists](#nested-lists)
-
+- [Emphasis](#emphasis-and-emphasis)
+- [Paragraph](#paragraphs)
+- [Headings](#headings)
+- [Blockquotes](#blockquotes)
+- [Lists](#lists)
+- [Links](#links)
+- [Images](#images)
+- [Code](#code)
+- [Nested Lists](#nested-lists)
+- [Tables](#tables)
 
 <!-- EMPHASIS -->
 
@@ -532,4 +533,45 @@ _OUTPUT_:
 ></li>
 ></ol>
 
-# THE END!!!
+## THE END.
+#
+<!-- NESTED LISTS -->
+# Tables
+[GO BACK TO REFERENCE](#reference)
+
+*INPUT:*
+```
+| Column 1 | Column 2 |
+| -------- | -------- |
+| Row 1    | Data 1   |
+| Row 2    | Data 2   |
+```
+
+*OUTPUT:*
+| Column 1 | Column 2 |
+| -------- | -------- |
+| Row 1    | Data 1   |
+| Row 2    | Data 2   |
+
+*MORE:*
+- Left-aligned: `| :--- |`
+- Center-aligned: `| :---: |`
+- Right-aligned: `| ---: |`
+
+*INPUT:*
+```
+| Level | Description | RAM | Storage |
+| :---- | :---------: | :-: | ------: |
+| Minimal | Basic Secure Shell (SSH) server without a desktop | 128 MB | 2 GB |
+| Standard | Default Xfce4 desktop environment | 2 GB | 20 GB |
+| Advanced | Better performance at resource-intensive tools | 8 GB | 20 GB |
+```
+*OUTPUT:*
+| Level | Description | RAM | Storage |
+| :---- | :---------: | :-: | ------: |
+| Minimal | Basic Secure Shell (SSH) server without a desktop | 128 MB | 2 GB |
+| Standard | Default Xfce4 desktop environment | 2 GB | 20 GB |
+| Advanced | Better performance at resource-intensive tools | 8 GB | 20 GB |
+
+
+# Congratulation
