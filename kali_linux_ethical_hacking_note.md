@@ -19,7 +19,9 @@ This note will contains practical skills for ethical hacking.
 - ***Virtual Machines***
 > It's pre-built. You can open it right away after unzipe it.
 
-**In VirtualBox -> Click Open button or `Ctrl + A` to open the unzipped file -> Kali Linux is running(Done).**
+**Install:**
+
+*In VirtualBox -> Click Open button or `Ctrl + A` to open the unzipped file -> Kali Linux is running(Done).*
 
 - ***Installer Images***
 > It provides complete control over the hardware access. You have to configure hardware settings.
@@ -32,7 +34,17 @@ This note will contains practical skills for ethical hacking.
 | Standard | Default Xfce4 desktop environment | 2 GB | 20 GB |
 | Advanced | Better performance at resource-intensive tools | 8 GB | 20 GB |
 
+**Install:**
 
+*In VirtualBox -> Click on New button or `Ctrl + N` to create new virtual machine -> Fill out the highlighted portion:*
+- `VM Name` PC name, 
+- `VM Folder` place to store data, 
+- `ISO Image` system to install with the installer file.
+
+![virtual_machine_setup_step1](./images/virtual_machine_setup_1.png)
+
+*Continue, `Right click` the created VM(virtual machine) -> slect `settings` -> select `System` tab -> do the following the changes:*
+- change the `Base memory` to a compatibale number according to requirements, 
 
 
 
